@@ -2,26 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+@layer base {
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+    @apply scroll-smooth;
+    font-family: 'Gilroy-Regular', sans-serif;
+    background-color: #141414;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden; 
+}
+
+.container-snap::-webkit-scrollbar {
+  display: none;
+}
+
+.container-snap {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+
+
+
+.animate-on-load {
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  transform: translateX(
+    0
+  ); /* Initial position for translation effect (no translation) */
+}
+.translate-down-fade {
+  animation-name: translateDownFadeIn;
+}
+@keyframes translateDownFadeIn {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
