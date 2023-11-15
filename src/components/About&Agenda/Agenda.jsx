@@ -24,7 +24,7 @@ const agenda = [
               key={event.time}
               className="flex items-center justify-start gap-8 p-2 item-row"
             >
-              <Image src={arrow} alt="arrow" className="w-4 md:w-8 lg:w-12" />
+              <Image src={arrow} alt="arrow" className="w-4 md:w-8 xl:w-12" />
               <div className=" justify-start items-start gap-[34px]  ">
                 <h1 className="text-white  tracking-[7.20px]">
                   {event.time}: {event.title}
