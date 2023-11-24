@@ -12,7 +12,7 @@ const Footer = () => {
             Let’s Keep in Touch
           </h2>
           <div className="flex gap-[6vw]">
-            <Image
+            {/* <Image
               src={"/Fb.svg"}
               width={72}
               height={72}
@@ -22,19 +22,21 @@ const Footer = () => {
                 width: "10%",
                 height: "auto",
               }}
-            />
-            <Image
-              src={"/In.svg"}
-              width={72}
-              height={72}
-              alt={"Instagram"}
-              sizes="5vw"
-              style={{
-                width: "10%",
-                height: "auto",
-              }}
-            />
-            <Image
+            /> */}
+            <a href="https://www.instagram.com/codemasters55/?hl=fr">
+              <Image
+                src={"/In.svg"}
+                width={270}
+                height={270}
+                alt={"Instagram"}
+                sizes="5vw"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </a>
+            {/*<Image
               src={"/Th.svg"}
               width={72}
               height={72}
@@ -66,7 +68,7 @@ const Footer = () => {
                 width: "10%",
                 height: "auto",
               }}
-            />
+            />*/}
           </div>
         </div>
       </footer>

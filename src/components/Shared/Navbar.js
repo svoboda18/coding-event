@@ -22,33 +22,6 @@ const Navbar = () => {
               maxWidth: "25%",
             }}
           />
-          <ul className="hidden lg:flex gap-[3vw] text-white">
-            <li>
-              <Link href="/">
-                <p className="text-[#DEF400] font-Gilroy">Home</p>
-              </Link>
-            </li>
-            <li>
-              <Link href="/about">
-                <p className="font-Gilroy">About</p>
-              </Link>
-            </li>
-            <li>
-              <Link href="">
-                <p>Agenda</p>
-              </Link>
-            </li>
-            <li>
-              <Link href="">
-                <p>Challenge</p>
-              </Link>
-            </li>
-            <li>
-              <Link href="">
-                <p>FAQ</p>
-              </Link>
-            </li>
-          </ul>
           <button className="hidden lg:block bg-[#DEF400] px-[2vw] py-[2vh]">
             Register Now
           </button>
