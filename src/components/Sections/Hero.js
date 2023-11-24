@@ -14,7 +14,7 @@ function Hero() {
           <button className=" bg-[#DEF400] border-2 border-[#DEF400] px-[2vw] py-[2vh]">
             Register Now
           </button>
-          <button className=" bg-transparent border-2 border-[#DEF400] text-[#DEF400] px-[2vw] py-[2vh]">
+          <button className="hidden bg-transparent border-2 border-[#DEF400] text-[#DEF400] px-[2vw] py-[2vh]">
             Solve the Challenge
           </button>
         </div>
