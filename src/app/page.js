@@ -2,7 +2,7 @@ import About from "@/components/Sections/About";
 import Agenda from "@/components/Sections/Agenda";
 import FAQ from "@/components/Sections/FAQ";
 import Hero from "@/components/Sections/Hero";
-import Image from "next/image";
+import Leaderboard from "@/components/Sections/Leaderboard";
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <Hero />
       <About />
       <Agenda />
+      <Leaderboard />
       <FAQ />
     </main>
   );
