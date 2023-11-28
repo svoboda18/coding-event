@@ -113,7 +113,7 @@ const Leaderboard = () => {
                 <tr>
                   <th colSpan={2} className="py-2 px-4 border-[#DEF400] border-b"></th>
                   {challenges.map((entry, i) => (
-                    <th className="py-2 px-4 border-[#DEF400] border-b">Challenge {i + 1}</th>
+                    <th className="py-2 px-4 border-[#DEF400] border-b" key={i}>Challenge {i + 1}</th>
                   ))}
                 </tr>
               </thead>
@@ -135,7 +135,7 @@ const Leaderboard = () => {
                       {
                         Object.entries(entry.hist).map((entry, idx) => {
                           const [i, r] = entry;
-                          return (<td className="py-2 px-4 border-[#DEF400] border-b">{idx == parseInt(i) ? r : '/'}</td>
+                          return (<td className="py-2 px-4 border-[#DEF400] border-b" key={idx}>{idx == parseInt(i) ? r : '/'} </td>
                           )
                         })
                       }
